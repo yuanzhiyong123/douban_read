@@ -1,0 +1,13 @@
+<view class="container">
+  <swiper class='list-swiper' autoplay='true' indicator-dots='true'indicator-color="#fff" circular="true">
+    <swiper-item class="swiper-item">
+      <image class='swiper-img' src='/images/post/xiaolong.jpg'></image>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <image class='swiper-img' src='/images/post/vr.png'></image>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <image class='swiper-img' src='/images/post/bl.png'></image>
+    </swiper-item>
+  </swiper>
+</view>
