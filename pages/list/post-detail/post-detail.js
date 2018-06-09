@@ -1,5 +1,4 @@
-var postData = require('../../data/posts-data.js');
-
+var postData = require('../../../data/posts-data.js');
 Page({
 
   /**
@@ -13,17 +12,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var id = options.id;
     this.setData({
-      postList: postData.postList
+      postDetail: postData.postList[id]
     });
-  },
-
-  onDetail: function(event) {
-    var postId = event.currentTarget.dataset.postid;
-    console.log(postId);
-    wx.navigateTo({
-      url: './post-detail/post-detail?id='+postId,
-    })
   },
 
   /**
@@ -58,12 +50,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    setTimeout(function(){
-      wx.stopPullDownRefresh();
-      wx.showToast({
-        title: '更新完成'
-      });
-    },1000);
+    
   },
 
   /**

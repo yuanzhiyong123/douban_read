@@ -11,7 +11,9 @@
       <image class='swiper-img' src='/images/post/bl.png'></image>
     </swiper-item>
   </swiper>
-  <block wx:for="{{postList}}" wx:for-item="item">
-    <template is="list-item" data="{{item}}"></template>
+  <block wx:for="{{postList}}" wx:for-item="item" wx:key="{{item.id}}">
+    <view bind:tap="onDetail" data-postid="{{item.postId}}">
+      <template is="list-item" data="{{item}}"></template>
+    </view>
   </block>
 </view>

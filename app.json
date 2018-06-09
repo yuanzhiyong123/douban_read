@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/home/home",
-    "pages/list/list"
+    "pages/list/list",
+    "pages/list/post-detail/post-detail"
   ],
   "window":{
     "backgroundTextStyle":"light",

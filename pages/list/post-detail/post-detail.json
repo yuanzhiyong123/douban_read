@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#b3d4db",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "文与字",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+}
