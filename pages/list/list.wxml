@@ -1,3 +1,4 @@
+<import src="./list-item/list-item-template.wxml" />
 <view class="container">
   <swiper class='list-swiper' autoplay='true' indicator-dots='true'indicator-color="#fff" circular="true">
     <swiper-item class="swiper-item">
@@ -10,35 +11,7 @@
       <image class='swiper-img' src='/images/post/bl.png'></image>
     </swiper-item>
   </swiper>
-  <view class="post-con">
-    <view class="user-avator-date">
-      <image class="user-avator" src="/images/avatar/1.png" />
-      <text class="post-date">Nov 20 2018</text>
-    </view>
-    <text class="post-title">微信小程序开发指南</text>
-    <image class="post-img" src="/images/post/xiaolong.jpg" />
-    <text class="post-desc">立刻搭街坊就卢卡斯京东方卢卡斯的积分路上看到房价设立考点附近设立考点附近流口水的房间</text>
-    <view class="post-message">
-      <image class="post-comment-icon" src="/images/icon/chat1.png" />
-      <text class="post-comment">90</text>
-      <image class="post-comment-icon" src="/images/icon/view.png" />
-      <text class="post-comment">90</text>
-    </view>
-  </view>
-
-  <view class="post-con">
-    <view class="user-avator-date">
-      <image class="user-avator" src="/images/avatar/1.png" />
-      <text class="post-date">Nov 20 2018</text>
-    </view>
-    <text class="post-title">微信小程序开发指南</text>
-    <image class="post-img" src="/images/post/xiaolong.jpg" />
-    <text class="post-desc">立刻搭街坊就卢卡斯京东方卢卡斯的积分路上看到房价设立考点附近设立考点附近流口水的房间</text>
-    <view class="post-message">
-      <image class="post-comment-icon" src="/images/icon/chat1.png" />
-      <text class="post-comment">90</text>
-      <image class="post-comment-icon" src="/images/icon/view.png" />
-      <text class="post-comment">90</text>
-    </view>
-  </view>
+  <block wx:for="{{postList}}" wx:for-item="item">
+    <template is="list-item" data="{{item}}"></template>
+  </block>
 </view>

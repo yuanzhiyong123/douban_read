@@ -2,7 +2,7 @@
   <image class='user-avator' src='https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erOGGRTUMAlEUrYa6Pib44obrnKz2StAOiaxsFBaF47qaswDyyFGYiawQIXVIsiaicjLnfMIX8M7qGbmgQ/132'></image>
   <text class='username'>hello, 相思雨gg</text>
   <view class='button'>
-    <text class='button-text'>开启小程序之旅</text>
+    <text class='button-text' bind:tap="goList">开启小程序之旅</text>
   </view>
 </view>
 

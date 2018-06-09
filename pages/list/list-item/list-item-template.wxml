@@ -1,0 +1,17 @@
+<template name="list-item">
+  <view class="post-con">
+    <view class="user-avator-date">
+      <image class="user-avator" src="{{item.avatar}}" />
+      <text class="post-date">{{item.date}}</text>
+    </view>
+    <text class="post-title">{{item.title}}</text>
+    <image class="post-img" src="{{item.imgSrc}}" />
+    <text class="post-desc">{{item.content}}</text>
+    <view class="post-message">
+      <image class="post-comment-icon" src="/images/icon/chat1.png" />
+      <text class="post-comment">{{item.reading}}</text>
+      <image class="post-comment-icon" src="/images/icon/view.png" />
+      <text class="post-comment">{{item.collection}}</text>
+    </view>
+  </view>
+</template>
