@@ -1,7 +1,7 @@
 <view class="container">
   <view class='banner-con'>
     <image class='banner-img' src='{{postDetail.headImgSrc}}'></image>
-    <image class='banner-music' src='/images/music/music-start.png'></image>
+    <image class='banner-music' src="{{isPlayMusic?'/images/music/music-stop.png':'/images/music/music-start.png'}}" bind:tap="handleClickMusic"></image>
   </view>
   <view class='post-info'>
     <image class='avatar' src='{{postDetail.avatar}}'></image>
@@ -11,8 +11,8 @@
   </view>
   <text class='title'>{{postDetail.title}}</text>
   <view class='button-con'>
-    <image class='collection' src='/images/icon/collection.png'></image>
-    <image class='share' src='/images/icon/share.png'></image>
+    <image class='collection' src="{{!isCollected?'/images/icon/collection-anti.png':'/images/icon/collection.png'}}" bind:tap="handleClickCollect"></image>
+    <image class='share' src="/images/icon/share.png" bind:tap="handleClickShare"></image>
     <view class='line'></view>
   </view>
   <text class='content'>{{postDetail.detail}}</text>
