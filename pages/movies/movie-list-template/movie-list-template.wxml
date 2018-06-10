@@ -1,0 +1,15 @@
+<import src="../movie-item-template/movie-item-template.wxml" />
+<template name="movie-list-template">
+  <view class='movies-container'>
+    <view class='movies-header'>
+      <text class='movies-title'>正在热映</text>
+      <text class='movies-more'>更多 ></text>
+    </view>
+    <view class='movies-list'>
+      <template is="movie-item-template"></template>
+      <template is="movie-item-template"></template>
+      <template is="movie-item-template"></template>
+    </view>
+    <template is="star-template" />
+  </view>
+</template>

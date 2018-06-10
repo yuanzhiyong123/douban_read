@@ -1,6 +1,6 @@
 Page({
   goList: function() {
-    wx.redirectTo({
+    wx.switchTab({
       url: '../list/list',
     })
   }

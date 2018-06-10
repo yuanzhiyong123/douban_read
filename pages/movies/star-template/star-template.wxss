@@ -1,0 +1,16 @@
+.star-container, .stars{
+  display: flex;
+  flex-direction: row;
+}
+.stars{
+  margin-right: 24rpx;
+}
+.star-img{
+  width: 17rpx;
+  height: 17rpx;
+  margin-right: 2px;
+}
+.star-text{
+  font-size: 17rpx;
+  vertical-align: middle;
+}
