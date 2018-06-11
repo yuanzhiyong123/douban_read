@@ -7,6 +7,6 @@
       <image class='star-img' src='/images/icon/star.png'></image>
       <image class='star-img' src='/images/icon/star.png'></image>
     </view>
-    <text class='star-text'>8.1</text>
+    <text class='star-text'>{{movie.rating.average}}</text>
   </view>
 </template>

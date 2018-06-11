@@ -1,8 +1,8 @@
 <import src="../star-template/star-template.wxml" />
 <template name="movie-item-template">
-  <view class='movie-container'>
-    <image class='movie-img' src='/images/iqiyi.png'></image>
-    <text class='movie-title'>我不是潘金莲我不是潘金莲我不是潘金莲</text>
-    <template is="star-template"></template>
+  <view class='movie-container' data-id="{{movie.id}}">
+    <image class='movie-img' src='{{movie.images.large}}'></image>
+    <text class='movie-title'>{{movie.title}}</text>
+     <template is="star-template" data="{{movie}}"></template> 
   </view>
 </template>

@@ -2,13 +2,13 @@
 <template name="movie-list-template">
   <view class='movies-container'>
     <view class='movies-header'>
-      <text class='movies-title'>正在热映</text>
+      <text class='movies-title'>{{title}}</text>
       <text class='movies-more'>更多 ></text>
     </view>
     <view class='movies-list'>
-      <template is="movie-item-template"></template>
-      <template is="movie-item-template"></template>
-      <template is="movie-item-template"></template>
+      <block wx:for="{{movies}}" wx:for-item="movie">
+        <template is="movie-item-template" data="{{movie}}"></template>
+      </block>
     </view>
     <template is="star-template" />
   </view>

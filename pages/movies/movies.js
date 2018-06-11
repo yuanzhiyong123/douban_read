@@ -5,28 +5,46 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    hotMovieList:[],
+    top250MovieList:[],
+    coming_soonMovieList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getHotMovieList({
-      start: 1,
+    this.getHotMovieList('/v2/movie/in_theaters',{  //请求正在热映电影列表
+      start: 0,
       count: 3
-    });
+    },'hotMovieList');
+    this.getHotMovieList('/v2/movie/top250', {  //请求正在热映电影列表
+      start: 0,
+      count: 3
+    }, 'top250MovieList');
+    this.getHotMovieList('/v2/movie/coming_soon', {  //请求正在热映电影列表
+      start: 0,
+      count: 3
+    }, 'coming_soonMovieList');
   },
 
-  getHotMovieList: function(data) {
+  getHotMovieList: function(url,data,list) {
+    var _this = this;
     common.request({
-      url:'/v2/movie/in_theaters',
+      url:url,
       data:data,
       success: function(res){
         console.log(res);
+        var obj={};
+        obj[list]={
+          movies: res.data.subjects,
+          title:res.data.title
+        };
+        _this.setData(obj);
       }
     });
   },
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
