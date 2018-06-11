@@ -13,7 +13,25 @@ const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : '0' + n
 }
+var common = {
+  request: function (param) {
+    wx.request({
+      url: 'http://127.0.0.1:3000/' + param.url, //仅为示例，并非真实的接口地址
+      data: param.data || '',
+      header: {
+        'content-type': '' // 默认值
+      },
+      success: function (res) {
+        param.success(res);
+      },
+      fail: function (err) {
+        param.error(err);
+      }
+    });
+  }
+};
 
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  common
 }
