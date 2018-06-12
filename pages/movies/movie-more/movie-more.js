@@ -6,9 +6,9 @@ Page({
    */
   data: {
     movieList: [],
-    title:'',
-    url:'',
-    data:{
+    title: '',
+    url: '',
+    data: {
       start: 0,
       count: 12
     }
@@ -59,6 +59,12 @@ Page({
     });
   },
 
+  getMovieDetail: function (event) {
+    var id = event.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '../movie-detail/movie-detail?id=' + id
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -101,11 +107,11 @@ Page({
    */
   onReachBottom: function () {
     var obj = {
-      data:{}
+      data: {}
     };
     obj.data.start = this.data.data.start + this.data.data.count;
     this.setData(obj);
-    this.getHotMovieList(this.data.url,this.data.data, 'movieList');
+    this.getHotMovieList(this.data.url, this.data.data, 'movieList');
   },
 
   /**

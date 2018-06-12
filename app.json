@@ -4,12 +4,13 @@
     "pages/list/list",
     "pages/list/post-detail/post-detail",
     "pages/movies/movies",
-    "pages/movies/movie-more/movie-more"
+    "pages/movies/movie-more/movie-more",
+    "pages/movies/movie-detail/movie-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#b3d4db",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#ccc",

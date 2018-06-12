@@ -1,0 +1,96 @@
+@import '../star-template/star-template.wxss';
+.container{
+
+}
+.header{
+  width: 100%;
+  height: 320rpx;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding:60rpx 0 0 40rpx;
+}
+.header .title{
+   font-size: 35rpx;
+   font-weight: bold;
+   color: #fff;
+   margin-bottom: 50rpx;
+}
+.header .adderss-date{
+  font-size:26rpx;
+  color: #fff;
+  margin-bottom: 75rpx;
+}
+.header .like-comment{
+  flex-direction: row;
+}
+.header .like{
+  font-size:16rpx;
+  color: #f21146;
+  margin-right: 20rpx;
+}
+.header .like-text{
+  font-size: 20rpx;
+  color: #666;
+  margin-right: 40rpx;
+}
+.header .bg-img{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(10px)
+}
+.header .log-img{
+  position: absolute;
+  width: 174rpx;
+  height: 238rpx;
+  bottom: -78rpx;
+  right: 60rpx;
+}
+.movie-info{
+  display: flex;
+  flex-direction: column;
+  padding: 46rpx 0 60rpx 40rpx;
+  border-bottom: 1px solid #ccc;
+  font-size: 20rpx;
+  color: #666;
+}
+.movie-info .old-title{
+  font-size: 20rpx;
+  font-weight: bold;
+  margin-bottom: 50rpx;
+}
+.score-con{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 22rpx;
+}
+.score-con .text{
+  color: #9a9a9a;
+  margin-right: 32rpx;
+  vertical-align: top; 
+}
+.director-con, .casts-con{
+  margin-bottom: 22rpx;
+}
+.director-con .text, .casts-con .text, .type-con .text{
+  color: #9a9a9a;
+  margin-right: 32rpx;
+}
+.detail-con{
+  display: flex;
+  flex-direction: column;
+  padding: 50rpx 40rpx;
+  font-size: 20rpx;
+}
+.detail-con .detail-title{
+  color: #999;
+  margin-bottom: 36rpx;
+}
+.detail-con .desc{
+  color: #666;
+  line-height: 40rpx;
+}

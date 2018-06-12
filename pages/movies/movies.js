@@ -29,6 +29,9 @@ Page({
   },
 
   getHotMovieList: function(url,data,list) {
+    wx.showLoading({
+      title: '正在加载中',
+    })
     var _this = this;
     common.request({
       url:url,
@@ -41,6 +44,7 @@ Page({
           title:res.data.title
         };
         _this.setData(obj);
+        wx.hideLoading();
       }
     });
   },
@@ -49,6 +53,13 @@ Page({
     var type = event.currentTarget.dataset.type;
     wx.navigateTo({
       url: './movie-more/movie-more?type='+type,
+    })
+  },
+
+  getMovieDetail: function(event) {
+    var id = event.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: './movie-detail/movie-detail?id='+id
     })
   },
   

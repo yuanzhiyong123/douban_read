@@ -1,0 +1,38 @@
+<import src="../star-template/star-template.wxml" />
+<view class="container">
+  <view class='header'>
+    <text class='title'>{{movieDetail.title}}</text>
+    <text class='adderss-date'>{{movieDetail.countries[0]}} . {{movieDetail.year}}</text>
+    <view class='like-comment'>
+      <text class='like'>{{movieDetail.wish_count}}</text>
+      <text class='like-text'>人喜欢</text>
+      <text class='like'>{{movieDetail.ratings_count}}</text>
+      <text class='like-text'>条评论</text>
+    </view>
+    <image class='bg-img' src="{{movieDetail.images.large}}"></image>
+    <image class='log-img' src="{{movieDetail.images.large}}"></image>
+  </view>
+  <view class='movie-info'>
+    <text class='old-title'>{{movieDetail.original_title}}</text>
+    <view class='score-con'>
+      <text class='text'>评分</text>
+      <template is="star-template" ></template>
+    </view>
+    <view class='director-con'>
+      <text class='text'>导演</text>
+      <text class='director'>{{movieDetail.directors[0].name}}</text>  
+    </view>
+    <view class='casts-con'>
+      <text class='text'>主演</text>
+      <text class='casts'>{{movieDetail.casts[0].name}}</text>  
+    </view>
+    <view class='type-con'>
+      <text class='text'>类型</text>
+      <text class='type'>{{movieDetail.genres[0]}}</text>
+    </view>
+  </view>
+  <view class='detail-con'>
+    <text class='detail-title'>剧情简介</text>
+    <text class='desc'>{{movieDetail.summary}}</text>
+  </view>
+</view>
