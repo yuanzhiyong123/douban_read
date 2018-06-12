@@ -1,0 +1,9 @@
+@import '../movie-item-template/movie-item-template.wxss';
+.more-container{
+  margin-top: 40rpx;
+  margin-left: 14rpx;
+}
+.movie-single{
+  float: left;
+  margin-bottom: 40rpx;
+}

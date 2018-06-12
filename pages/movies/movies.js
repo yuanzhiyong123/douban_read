@@ -44,6 +44,13 @@ Page({
       }
     });
   },
+
+  handleClickMore: function (event) {
+    var type = event.currentTarget.dataset.type;
+    wx.navigateTo({
+      url: './movie-more/movie-more?type='+type,
+    })
+  },
   
   /**
    * 生命周期函数--监听页面初次渲染完成

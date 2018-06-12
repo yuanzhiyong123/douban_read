@@ -22,10 +22,10 @@ var common = {
         'content-type': '' // 默认值
       },
       success: function (res) {
-        param.success(res);
+        param.success && param.success(res);
       },
       fail: function (err) {
-        param.error(err);
+        param.error && param.error(err);
       }
     });
   }

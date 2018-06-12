@@ -1,7 +1,7 @@
 <import src="../movie-item-template/movie-item-template.wxml" />
 <template name="movie-list-template">
   <view class='movies-container'>
-    <view class='movies-header'>
+    <view class='movies-header' bind:tap="handleClickMore" data-type="{{title}}">
       <text class='movies-title'>{{title}}</text>
       <text class='movies-more'>更多 ></text>
     </view>
