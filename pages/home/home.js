@@ -1,7 +1,7 @@
 Page({
   goList: function() {
     wx.switchTab({
-      url: '../list/list',
+      url: '../movies/movies',
     })
   }
 });

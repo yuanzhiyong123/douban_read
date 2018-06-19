@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "电影分类"
+  "navigationBarTitleText": "电影分类",
+  "usingComponents": {
+    "movie-list": "/components/movie-list/movie-list"
+  }
 }

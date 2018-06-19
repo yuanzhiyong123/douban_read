@@ -1,4 +1,4 @@
-@import '../movie-item-template/movie-item-template.wxss';
+/* @import '../movie-item-template/movie-item-template.wxss'; */
 
 .movies-container{
   display: flex;

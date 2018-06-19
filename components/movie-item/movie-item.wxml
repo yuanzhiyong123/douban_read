@@ -1,8 +1,7 @@
-<import src="../star-template/star-template.wxml" />
-<template name="movie-item-template">
+<view name="movie-item-template">
   <view class='movie-container' data-id="{{movie.id}}" bind:tap="getMovieDetail">
     <image class='movie-img' src='{{movie.images.large}}'></image>
     <text class='movie-title'>{{movie.title}}</text>
-     <template is="star-template" data="{{movie}}"></template> 
+      <star movie="{{movie}}"/>
   </view>
-</template>
+</view>

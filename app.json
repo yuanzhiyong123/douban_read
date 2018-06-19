@@ -15,19 +15,19 @@
   "tabBar": {
     "color": "#ccc",
     "selectedColor": "#405f80",
-    "borderStyle":"white",
+    "borderStyle": "white",
     "list": [
-      {
-        "pagePath": "pages/list/list",
-        "text": "评书",
-        "iconPath":"/images/tab/yuedu.png",
-        "selectedIconPath":"/images/tab/yuedu_hl.png"
-      },
       {
         "pagePath": "pages/movies/movies",
         "text": "电影",
         "iconPath": "/images/tab/dianying.png",
         "selectedIconPath": "/images/tab/dianying_hl.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "评书",
+        "iconPath": "/images/tab/yuedu.png",
+        "selectedIconPath": "/images/tab/yuedu_hl.png"
       }
     ]
   }

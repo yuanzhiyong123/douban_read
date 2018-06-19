@@ -1,4 +1,4 @@
-<template name="star-template">
+<view name="star-template">
   <view class='star-container'>
     <view class='stars'>
       <image class='star-img' src='/images/icon/star.png'></image>
@@ -9,4 +9,4 @@
     </view>
     <text class='star-text'>{{movie.rating.average}}</text>
   </view>
-</template>
+</view>

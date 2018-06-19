@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "电影详情",
+  "component": true,
   "usingComponents": {
     "star": "/components/star/star"
   }

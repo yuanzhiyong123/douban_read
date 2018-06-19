@@ -1,0 +1,15 @@
+<!-- <import src="../movie-item-template/movie-item-template.wxml" /> -->
+<view name="movie-list-template">
+  <view class='movies-container'>
+    <view class='movies-header' bind:tap="handleClickMore" data-type="{{movies.title}}">
+      <text class='movies-title'>{{movies.title}}</text>
+      <text class='movies-more'>更多 ></text>
+    </view>
+    <view class='movies-list'>
+      <block wx:for="{{movies.movies}}" wx:for-item="movie" wx:key="{{movie}}">
+        <!-- <template is="movie-item-template" data="{{movie}}"></template> -->
+        <movie-item movie="{{movie}}"/>
+      </block>
+    </view>
+  </view>
+</view>

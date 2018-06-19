@@ -1,4 +1,4 @@
-@import '../movie-item-template/movie-item-template.wxss';
+/* @import '../movie-item-template/movie-item-template.wxss'; */
 .more-container{
   margin-top: 40rpx;
   margin-left: 14rpx;

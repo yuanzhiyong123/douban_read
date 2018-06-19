@@ -1,8 +1,8 @@
-<import src="../movie-item-template/movie-item-template.wxml" />
+
 <view class='more-container'>
   <block wx:for="{{movieList}}" wx:for-item="movie" wx:key="{{movie.title}}">
     <view class='movie-single'>
-      <template is="movie-item-template" data="{{movie}}"></template>
+      <movie-item  movie="{{movie}}" />
     </view>
   </block>
 </view>

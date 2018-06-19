@@ -1,4 +1,4 @@
-@import '../star-template/star-template.wxss';
+/* @import '../star-template/star-template.wxss'; */
 .container{
 
 }

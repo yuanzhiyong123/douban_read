@@ -48,20 +48,6 @@ Page({
       }
     });
   },
-
-  handleClickMore: function (event) {
-    var type = event.currentTarget.dataset.type;
-    wx.navigateTo({
-      url: './movie-more/movie-more?type='+type,
-    })
-  },
-
-  getMovieDetail: function(event) {
-    var id = event.currentTarget.dataset.id;
-    wx.navigateTo({
-      url: './movie-detail/movie-detail?id='+id
-    })
-  },
   
   /**
    * 生命周期函数--监听页面初次渲染完成

@@ -1,4 +1,4 @@
-<import src="../star-template/star-template.wxml" />
+
 <view class="container">
   <view class='header'>
     <text class='title'>{{movieDetail.title}}</text>
@@ -16,7 +16,7 @@
     <text class='old-title'>{{movieDetail.original_title}}</text>
     <view class='score-con'>
       <text class='text'>评分</text>
-      <template is="star-template" ></template>
+      <star movie="{{movieDetail}}" />
     </view>
     <view class='director-con'>
       <text class='text'>导演</text>
