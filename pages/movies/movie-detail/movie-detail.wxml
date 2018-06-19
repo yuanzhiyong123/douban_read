@@ -10,7 +10,7 @@
       <text class='like-text'>条评论</text>
     </view>
     <image class='bg-img' src="{{movieDetail.images.large}}"></image>
-    <image class='log-img' src="{{movieDetail.images.large}}"></image>
+    <image class='log-img' src="{{movieDetail.images.large}}" bind:tap="previewImg" data-img="{{movieDetail.images.large}}"></image>
   </view>
   <view class='movie-info'>
     <text class='old-title'>{{movieDetail.original_title}}</text>

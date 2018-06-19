@@ -25,12 +25,21 @@ Page({
     common.request({
       url:'/v2/movie/subject/'+id,
       success: function(res) {
+        console.log(res.data);
         _this.setData({
           movieDetail: res.data
         });
         wx.hideLoading();
       }
     });
+  },
+
+  previewImg: function(event) {
+    var imgUrl = event.currentTarget.dataset.img;
+    console.log(event);
+    wx.previewImage({
+      urls: [imgUrl, imgUrl],
+    })
   },
 
   /**

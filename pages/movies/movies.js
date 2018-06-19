@@ -37,7 +37,6 @@ Page({
       url:url,
       data:data,
       success: function(res){
-        console.log(res);
         var obj={};
         obj[list]={
           movies: res.data.subjects,
