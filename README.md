@@ -6,7 +6,7 @@
 ### 使用
 
 ```
-git clone 
+git clone https://github.com/yuanzhiyong123/douban_read.git  //把项目克隆到本地
 
 ```
 把代码克隆到本地之后 在小程序中打开
